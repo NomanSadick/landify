@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.row {
+  width: auto;
+  padding-left: 7.78%;
+  padding-right: 7.78%;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.row [class*=col-] {
+  float: left;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.button__primary,
+.button__secondery {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+}
+
+.button__primary {
+  background: #7C3AED;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.button__secondery {
+  background: transparent;
+  color: #7C3AED;
+}
+
+.customer__stories__content .col-6:nth-child(1) {
+  margin-top: 85px;
+  width: 30%;
+  margin-left: 140px;
+}
+
+.customer__stories__content .col-6:nth-child(2) {
+  margin-left: 25px;
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+.customer__stories__content .col-6:nth-child(3) {
+  margin-left: 25px;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.navbar__list--inline li,
+ul.integrates__tools li {
+  display: inline-block;
+}
+
+ul.navbar__list--inline li a {
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111827;
+}
+
+header {
+  background-image: url(../images/header/Background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar,
+.hero {
+  padding-top: 20px;
+}
+
+.navbar__menu a {
+  float: left;
+  padding-right: 26px;
+}
+
+.navbar .get__app img {
+  float: right;
+  padding-right: 15px;
+}
+
+.menu__icon {
+  visibility: hidden;
+}
+
+.hero {
+  padding-top: 20px;
+}
+
+.hero__content {
+  padding-top: 160px;
+}
+
+.hero__img img {
+  float: right;
+  padding-top: 65px;
+}
+
+.hero__content h5 {
+  padding: 25px 50px 25px 0px;
+}
+
+#clients_logo {
+  margin-top: 20px;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  margin: 0 auto;
+  width: 76%;
+}
+
+#clients_logo ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#clients_logo ul li {
+  padding: 30px 40px 30px 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#clients_logo ul li img {
+  margin: 0 auto;
+}
+
+#features {
+  text-align: center;
+  margin: 70px 0px 90px 0px;
+}
+
+#features h5 {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+#customer__stories {
+  background: #D5FAFC;
+  padding: 0px 0px 90px 0px;
+}
+
+.customer__stories__header i {
+  position: relative;
+  top: 60px;
+}
+
+.customer__stories__header h3 {
+  position: relative;
+  left: 100px;
+  padding-right: 520px;
+}
+
+.customer__stories__header h5 {
+  padding: 10px 0px 0px 100px;
+}
+
+#achievments,
+#integrations {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.achievments__content h3 {
+  padding-right: 10px;
+}
+
+.achievments__content h5 {
+  padding-top: 10px;
+  padding-right: 65px;
+}
+
+.integrates__content h3 {
+  padding-right: 150px;
+}
+
+.integrates__content h5 {
+  padding-top: 10px;
+  padding-right: 172px;
+}
+
+.integrates__tools {
+  background: #EDE9FE;
+  padding-bottom: 70px;
+  border-radius: 0px 0px 300px 300px;
+}
+
+.integrates__tools img {
+  padding-left: 28px;
+}
+
+#downloads {
+  background: #1DB5BE;
+}
+
+.downloads__content {
+  padding: 65px 0px 0px 0px;
+}
+
+.downloads__content h3 {
+  padding-bottom: 10px;
+}
+
+.downloads__content h5 {
+  padding-right: 106px;
+}
+
+.downloads__content .get__app {
+  padding: 18px 0px 10px 0px;
+}
+
+.downloads__images img {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.downloads__images__right {
+  margin-top: 114px;
+}
+
+#footer {
+  background: #111827;
+}
+
+.footer__content {
+  padding: 64px 0px 64px 0px;
+}
+
+#footer .get__app {
+  padding: 64px 0px 64px 0px;
+  float: right;
+}
+
+#footer .get__app h5 {
+  color: #D1D5DB;
+  padding-bottom: 14px;
+}
+
+#footer .get__app img {
+  padding-bottom: 14px;
+}
+
+@media screen and (max-width: 1030px) {
+  .navbar__menu a {
+    padding-right: 21px;
+  }
+  .downloads__content .get__app {
+    padding: 16px 0px 0px 0px;
+  }
+  .downloads__images__right {
+    margin-top: 185px;
+  }
+}
+@media only screen and (max-width: 958px) {
+  .col-3-md {
+    width: 25%;
+  }
+  .col-2-md {
+    width: 16.66%;
+  }
+  .col-8-md {
+    width: 66.66%;
+  }
+  .col-9-md {
+    width: 75%;
+  }
+  .col-5-md {
+    width: 41.66%;
+  }
+  .col-4-md {
+    width: 33.33%;
+  }
+  .col-6-md {
+    width: 50%;
+  }
+  .col-7-md {
+    width: 58.33%;
+  }
+  .col-10-md {
+    width: 83.33%;
+  }
+  .col-12-md {
+    width: 100%;
+  }
+  .navbar__list--inline {
+    display: none;
+  }
+  .navbar .get__app a, .menu__icon {
+    float: right;
+  }
+  .navbar .get__app img {
+    padding-right: 7px;
+  }
+  .menu__icon {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .hero__content {
+    padding-top: 60px;
+  }
+  .hero__img img {
+    transform: translateX(32%);
+    width: 62%;
+  }
+  .hero__img img {
+    float: none;
+    padding-top: 50px;
+  }
+  .hero__content h2 {
+    padding-right: 48px;
+  }
+  .hero__content h5 {
+    padding: 25px 180px 32px 0px;
+  }
+  #features h5 {
+    padding-left: 7.78%;
+    padding-right: 7.78%;
+  }
+  .customer__stories__content .col-6:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+  .customer__stories__content .col-6:nth-child(2) {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .customer__stories__content .col-6:nth-child(3) {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .customer__stories__header h3 {
+    position: relative;
+    left: 100px;
+    padding-right: 48px;
+    font-size: 36px;
+  }
+  .achievments__list {
+    padding-top: 40px;
+  }
+  .integrates__tools {
+    padding-bottom: 50px;
+    border-radius: 0px 0px 300px 300px;
+  }
+  .integrates__content h3 {
+    padding-right: 0px;
+  }
+  .integrates__content h5 {
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+  .integrates__tools img {
+    padding-left: 0px;
+  }
+  .downloads__images__left {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .row {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .col-12-sm {
+    width: 100%;
+  }
+  .col-10-sm {
+    width: 83.33%;
+  }
+  .navbar .get__app img {
+    display: none;
+  }
+  .hero__content h5 {
+    padding: 25px 98px 32px 0px;
+  }
+  .hero__img img {
+    width: 71%;
+    transform: translateX(20%);
+  }
+  .button__primary,
+.button__secondery {
+    padding: 12px 15px 12px 16px;
+  }
+  #features h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .features__content__item h6 {
+    padding: 10px 0px 10px 0px;
+  }
+  .customer__stories__header h3 {
+    padding-right: 74px;
+    font-size: 1.875rem;
+  }
+  #achievments {
+    padding-bottom: 0px;
+  }
+  .integrates__content h5 {
+    padding-bottom: 30px;
+  }
+  #downloads {
+    padding-bottom: 0px;
+  }
+  .downloads__content h5 {
+    padding-right: 0px;
+  }
+  .downloads__content img {
+    width: 30%;
+  }
+  .downloads__images img {
+    width: 80%;
+    padding-left: 35px;
+  }
+  .downloads__images__left {
+    margin-top: 30px;
+  }
+  .downloads__images__right {
+    margin-top: 0px;
+  }
+  #footer .get__app {
+    padding: 0px 0px 64px 0px;
+    float: right;
+  }
+  #footer .get__app img {
+    display: block;
+  }
+}

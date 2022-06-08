@@ -1,0 +1,29 @@
+ul {
+  list-style-type: none;
+}
+
+ul.footer__list--inline li {
+  display: inline-block;
+}
+
+ul.footer__list--inline li a {
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 8px;
+}
+
+ul.footer__list--inline li {
+  padding-right: 12px;
+}
+
+ul.footer__list--inline li a {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer__list--inline {
+  padding: 10px 0px 10px 0px;
+}
